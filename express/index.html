@@ -75,7 +75,7 @@ img {
 img {
     display: block;
     overflow: hidden;
-    transform-origin: center center; /* Set zoom origin to center */
+    transform-origin: center center;
 }
 
 /* Contact section folding effect */
@@ -352,10 +352,10 @@ img {
 
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
-            this.classList.add('shake-animation'); // Add the shake class
+            this.classList.add('shake-animation');
             setTimeout(() => {
-                this.classList.remove('shake-animation'); // Remove the shake class after animation
-            }, 500); // Match this timeout with the duration of the animation
+                this.classList.remove('shake-animation');
+            }, 500);
         });
     });
 
@@ -370,7 +370,7 @@ img {
             });
             
             image.addEventListener('mouseout', function() {
-                this.style.transform = 'scale(1)'; // Reset to original size
+                this.style.transform = 'scale(1)'; 
             });
         });
     });
